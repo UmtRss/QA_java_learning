@@ -1,15 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-        int sayi = 10;
-        double pi = 3.14;
-        char harf = 'A';
-        boolean dogruMu = true;
-        String mesaj = "Hello QA World!";
+        int a = 10;
+        int b = 3;
 
-        System.out.println("Sayı: " + sayi);
-        System.out.println("Pi: " + pi);
-        System.out.println("Harf: " + harf);
-        System.out.println("Doğru mu?: " + dogruMu);
-        System.out.println("Mesaj: " + mesaj);
+        // Aritmetik
+        System.out.println("Toplam: " + (a + b));
+        System.out.println("Fark: " + (a - b));
+        System.out.println("Çarpım: " + (a * b));
+        System.out.println("Bölüm: " + (a / b));
+        System.out.println("Kalan: " + (a % b));
+
+        // Karşılaştırma
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a <= b: " + (a <= b));
+
+        // Mantıksal
+        System.out.println("(a > 5) && (b < 5): " + ((a > 5) && (b < 5)));
+        System.out.println("(a < 5) || (b < 5): " + ((a < 5) || (b < 5)));
+        System.out.println("!(a == b): " + (!(a == b)));
     }
 }
