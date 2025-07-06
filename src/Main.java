@@ -1,26 +1,27 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 3;
+        int not = 85;
 
-        // Aritmetik
-        System.out.println("Toplam: " + (a + b));
-        System.out.println("Fark: " + (a - b));
-        System.out.println("Çarpım: " + (a * b));
-        System.out.println("Bölüm: " + (a / b));
-        System.out.println("Kalan: " + (a % b));
+        if (not >= 90) {
+            System.out.println("Harf Notu: A");
+        } else if (not >= 80) {
+            System.out.println("Harf Notu: B");
+        } else if (not >= 70) {
+            System.out.println("Harf Notu: C");
+        } else if (not >= 60) {
+            System.out.println("Harf Notu: D");
+        } else {
+            System.out.println("Harf Notu: F");
+        }
 
-        // Karşılaştırma
-        System.out.println("a == b: " + (a == b));
-        System.out.println("a != b: " + (a != b));
-        System.out.println("a > b: " + (a > b));
-        System.out.println("a < b: " + (a < b));
-        System.out.println("a >= b: " + (a >= b));
-        System.out.println("a <= b: " + (a <= b));
-
-        // Mantıksal
-        System.out.println("(a > 5) && (b < 5): " + ((a > 5) && (b < 5)));
-        System.out.println("(a < 5) || (b < 5): " + ((a < 5) || (b < 5)));
-        System.out.println("!(a == b): " + (!(a == b)));
+        // Örnek: sayının pozitif-negatif kontrolü
+        int sayi = -5;
+        if (sayi > 0) {
+            System.out.println("Pozitif");
+        } else if (sayi < 0) {
+            System.out.println("Negatif");
+        } else {
+            System.out.println("Sıfır");
+        }
     }
 }
