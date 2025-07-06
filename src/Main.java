@@ -18,5 +18,6 @@ public class Main {
             System.out.println("DO-WHILE Element: " + sayilar[k]);
             k++;
         } while (k < sayilar.length);
+
     }
 }
