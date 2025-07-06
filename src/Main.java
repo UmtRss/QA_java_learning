@@ -1,24 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        selamla();
+        Car car1 = new Car();
+        car1.brand = "Toyota";
+        car1.modelYear = 2020;
+        car1.Showinfo();
 
-        int toplamSonuc = topla(10,20);
-        System.out.println("Toplam Sonucu: " + toplamSonuc);
+        Car car2 = new Car();
+        car2.brand = "Honda";
+        car2.modelYear = 2018;
+        car2.Showinfo();
 
-        yazCarpim(5,4);
-    }
-
-    // Void Method
-    public static void selamla() {
-        System.out.println("Merhaba QA: ");
-    }
-    // Method with return
-    public static int topla(int x, int y) {
-        return x+y;
-    }
-
-    // Void Method with adding parameters
-    public static void yazCarpim( int x, int y) {
-        System.out.println("Çarpım: " + (x * y));
     }
 }
