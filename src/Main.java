@@ -1,37 +1,23 @@
 public class Main {
-    public static void main(String[] args) {
-        // Switch-case örneği
-        int gun = 3;
+    public static void main ( String[] args) {
+        //FOR LOOP
+        for (int i = 1; i<= 5; i++) {
+            System.out.println ("FOR LOOP REPEAT: " + i);
 
-        switch (gun) {
-            case 1:
-                System.out.println("Pazartesi");
-                break;
-            case 2:
-                System.out.println("Salı");
-                break;
-            case 3:
-                System.out.println("Çarşamba");
-                break;
-            case 4:
-                System.out.println("Perşembe");
-                break;
-            case 5:
-                System.out.println("Cuma");
-                break;
-            case 6:
-                System.out.println("Cumartesi");
-                break;
-            case 7:
-                System.out.println("Pazar");
-                break;
-            default:
-                System.out.println("Geçersiz gün");
         }
+        //WHILE LOOP
+        int k = 1;
+        while (k <= 5) {
+            System.out.println("WHILE LOOP REPEAT: " + k);
+            k++;
+        }
+        // DO-WHILE LOOP
+        int m = 1;
+        do {
+            System.out.println(" DO-WHILE LOOP REPEAT: " + m);
+            m++;
+        } while ( m <= 5);
 
-        // Ternary örneği
-        int sayi = -10;
-        String sonuc = (sayi >= 0) ? "Pozitif veya Sıfır" : "Negatif";
-        System.out.println(sonuc);
     }
+
 }
