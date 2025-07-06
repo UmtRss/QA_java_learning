@@ -1,27 +1,37 @@
 public class Main {
     public static void main(String[] args) {
-        int not = 85;
+        // Switch-case örneği
+        int gun = 3;
 
-        if (not >= 90) {
-            System.out.println("Harf Notu: A");
-        } else if (not >= 80) {
-            System.out.println("Harf Notu: B");
-        } else if (not >= 70) {
-            System.out.println("Harf Notu: C");
-        } else if (not >= 60) {
-            System.out.println("Harf Notu: D");
-        } else {
-            System.out.println("Harf Notu: F");
+        switch (gun) {
+            case 1:
+                System.out.println("Pazartesi");
+                break;
+            case 2:
+                System.out.println("Salı");
+                break;
+            case 3:
+                System.out.println("Çarşamba");
+                break;
+            case 4:
+                System.out.println("Perşembe");
+                break;
+            case 5:
+                System.out.println("Cuma");
+                break;
+            case 6:
+                System.out.println("Cumartesi");
+                break;
+            case 7:
+                System.out.println("Pazar");
+                break;
+            default:
+                System.out.println("Geçersiz gün");
         }
 
-        // Örnek: sayının pozitif-negatif kontrolü
-        int sayi = -5;
-        if (sayi > 0) {
-            System.out.println("Pozitif");
-        } else if (sayi < 0) {
-            System.out.println("Negatif");
-        } else {
-            System.out.println("Sıfır");
-        }
+        // Ternary örneği
+        int sayi = -10;
+        String sonuc = (sayi >= 0) ? "Pozitif veya Sıfır" : "Negatif";
+        System.out.println(sonuc);
     }
 }
