@@ -1,39 +1,24 @@
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.HashMap;
-
 public class Main {
     public static void main(String[] args) {
-        // List Example
-        List<String> list = new ArrayList<>();
-        list.add("Elma");
-        list.add("Armut");
-        list.add("Elma");
-        for (String meyve : list) {
-            System.out.println("List Element: " + meyve);
-        }
+        selamla();
 
-        //Set Example
-        Set<String> set = new HashSet<>();
-        set.add("Elma");
-        set.add("Armut");
-        set.add("Elma");
-        for (String meyve : set) {
-            System.out.println("Set element: " + meyve);
-        }
+        int toplamSonuc = topla(10,20);
+        System.out.println("Toplam Sonucu: " + toplamSonuc);
 
-        // Map example
-        Map<Integer, String> map = new HashMap<>();
-        map.put(1, "Elma");
-        map.put(2, "Armut");
-        map.put(3, "Kiraz");
-        for (Integer key : map.keySet()) {
-            System.out.println("Key: " + key + " - Value: " + map.get(key));
+        yazCarpim(5,4);
+    }
 
-        }
+    // Void Method
+    public static void selamla() {
+        System.out.println("Merhaba QA: ");
+    }
+    // Method with return
+    public static int topla(int x, int y) {
+        return x+y;
+    }
 
+    // Void Method with adding parameters
+    public static void yazCarpim( int x, int y) {
+        System.out.println("Çarpım: " + (x * y));
     }
 }
