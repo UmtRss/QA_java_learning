@@ -1,23 +1,39 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
-       int [] sayilar = {10, 20, 30, 40, 50};
+        // List Example
+        List<String> list = new ArrayList<>();
+        list.add("Elma");
+        list.add("Armut");
+        list.add("Elma");
+        for (String meyve : list) {
+            System.out.println("List Element: " + meyve);
+        }
 
-       //Navigate Array with FOR
-        for ( int i = 0; i < sayilar.length; i++) {
-            System.out.println("FOR Element: " + sayilar [i]);
+        //Set Example
+        Set<String> set = new HashSet<>();
+        set.add("Elma");
+        set.add("Armut");
+        set.add("Elma");
+        for (String meyve : set) {
+            System.out.println("Set element: " + meyve);
         }
-        // Navigate Array with WHILE
-        int j = 0;
-        while (j < sayilar.length) {
-            System.out.println("WHILE Element: " + sayilar[j]);
-            j++;
+
+        // Map example
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "Elma");
+        map.put(2, "Armut");
+        map.put(3, "Kiraz");
+        for (Integer key : map.keySet()) {
+            System.out.println("Key: " + key + " - Value: " + map.get(key));
+
         }
-        // Navigate Array with DO-WHILE
-        int k = 0;
-        do {
-            System.out.println("DO-WHILE Element: " + sayilar[k]);
-            k++;
-        } while (k < sayilar.length);
 
     }
 }
